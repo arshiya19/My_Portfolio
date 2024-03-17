@@ -12,12 +12,12 @@ function Header() {
         <header className="header">
             <nav className="nav">
                 <ul className="nav-list">
-                <li className="nav-item">Home</li>
-                <li className="nav-item">About</li>
-                <li className="nav-item">Education</li>
-                    <li className="nav-item">Skills</li>
-                    <li className="nav-item">Projects</li>
-                    <li className="nav-item">
+                <li className="nav-item">HOME</li>
+                <li className="nav-item">ABOUT</li>
+                <li className="nav-item">EDUCATION</li>
+                    <li className="nav-item">SKILLS</li>
+                    <li className="nav-item">PROJECTS</li>
+                    {/* <li className="nav-item">
                         <a href="https://github.com/arshiya19" target="_blank" rel="noopener noreferrer">
                         <img src={GitHubIcon} alt="GitHub" style={{ width: "25px", height: "25px" }} title= "GitHub" />
                         </a>
@@ -31,7 +31,7 @@ function Header() {
                         <a href="https://www.linkedin.com/in/arshiya-naheed-70956418a/" target="_blank" rel="noopener noreferrer">
                         <img src={LinkedinIcon} alt="GitHub" style={{ width: "25px", height: "25px" }} title= "LinkedIn"/>
                         </a>
-                    </li>
+                    </li> */}
                 </ul>
             </nav>
 

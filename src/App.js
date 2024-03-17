@@ -19,9 +19,6 @@ function App() {
     <div>
       <Header />
       <Body renderRandomFlowers={renderRandomFlowers} />
-      <div className="profile-picture">
-                <img src={Profilephoto} alt="Your Picture" />
-            </div>
       <Footer />
     </div>
   );

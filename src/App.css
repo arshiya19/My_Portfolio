@@ -39,9 +39,9 @@ body {
   display: flex; /* Use flexbox to align items horizontally */
   justify-content: center; /* Distribute items evenly along the main axis */
   align-items: center; /* Align items vertically */
-  padding: 5px;
+  padding: 10px;
   position: relative;
-  background-color: white;
+  background-color: #FAEEFF ;
 }
 
 .header-content {
@@ -91,4 +91,23 @@ body {
   height: 100px;
   border-radius: 50%;
   /* Add any additional styling you want for the profile picture here */
+}
+
+/* styles.css */
+.cinzel-decorative-regular {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cinzel-decorative-bold {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cinzel-decorative-black {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+  font-style: normal;
 }
