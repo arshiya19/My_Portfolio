@@ -85,27 +85,41 @@ function Body({ renderRandomFlowers }: { renderRandomFlowers: any }): React.JSX.
             </defs>
             {/* <rect x={100} y={window.innerHeight / 2 - 200} width={800} height={500} fill="#F7F2FA" fillOpacity="0.5" stroke="purple" strokeWidth="3" /> */}
             <rect x={100} y={rectY} width={800} height={500} rx={20} ry={20} fill="#F7F2FA" fillOpacity="0.5" stroke="purple" strokeWidth="1" />
-            <text x={270} y={rectY + 75} fontSize="50" class="cinzel-decorative-regular" fill="black">
+            <text x={270} y={rectY + 75} fontSize="50" class="cinzel-decorative-black" fill="#AA37AF" stroke="#100011" strokeWidth="0.7">
                 Hi, I'm Arshiya Naheed.
             </text>
-            <text x={150} y={rectY + 130} fontSize="24" fill="black">
-                Hi, Im Arshiya Naheed.
+            <text x={100} y={rectY + 130} fontSize="26" fill="black" width="760" class="cinzel-decorative-regular" >
+                <tspan x={150} dy="1.2em">
+                A master's student in CS with a focus on both <tspan fontStyle="italic">Machine Learning</tspan> and 
+                </tspan>
+                <tspan x={150} dy="1.2em">
+                <tspan fontStyle="italic">Full-stack Development. </tspan>I love creating user-friendly websites and 
+                </tspan>
+                <tspan x={150} dy="1.2em">
+                mobile apps, and I'm really passionate about machine learning. 
+                    </tspan>
+                    <tspan x={150} dy="1.2em">
+                    In my free time, I enjoy playing around with data and models, 
+                </tspan>
+                <tspan x={150} dy="1.2em">
+                always looking for new ways to learn and improve.
+                </tspan>
             </text>
             <g>
-        {/* Thin line inside the box */}
-        <line x1={150} y1={rectY + 390} x2={850} y2={rectY + 390} stroke="purple" strokeWidth="0.4" />
+                {/* Thin line inside the box */}
+                <line x1={150} y1={rectY + 390} x2={850} y2={rectY + 390} stroke="purple" strokeWidth="0.4" />
 
-        {/* Icons */}
-        <a href="https://github.com/arshiya19" target="_blank" rel="noopener noreferrer" >
-        <image href={GitHubIcon} x={450} y={rectY + 400} width="70" height="70" title="Visit GitHub" />
-        </a>
-        <a href="mailto:arshiyanaheed98@gmail.com">
-        <image href={EmailIcon} x={550} y={rectY + 400} width="70" height="70" />
-        </a>
-        <a href="https://www.linkedin.com/in/arshiya-naheed-70956418a/" target="_blank" rel="noopener noreferrer">
-        <image href={LinkedinIcon} x={350} y={rectY + 400} width="60" height="60" />
-        </a>
-    </g>
+                {/* Icons */}
+                <a href="https://github.com/arshiya19" target="_blank" rel="noopener noreferrer" >
+                    <image href={GitHubIcon} x={450} y={rectY + 400} width="70" height="70" title="Visit GitHub" />
+                </a>
+                <a href="mailto:arshiyanaheed98@gmail.com">
+                    <image href={EmailIcon} x={550} y={rectY + 400} width="70" height="70" />
+                </a>
+                <a href="https://www.linkedin.com/in/arshiya-naheed-70956418a/" target="_blank" rel="noopener noreferrer">
+                    <image href={LinkedinIcon} x={350} y={rectY + 400} width="60" height="60" />
+                </a>
+            </g>
 
         </svg>
     );
