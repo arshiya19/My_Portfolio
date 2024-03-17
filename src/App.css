@@ -1,0 +1,94 @@
+.flower {
+  position: absolute;
+  width: 10px; /* Adjust the width and height based on your flower size */
+  height: 10px;
+  fill: #fff; /* Adjust the fill color based on your flower color */
+} 
+
+#flower-C {
+  transform: translateX(-90%);
+}
+
+#flower-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  background-color: #FAEEFF;
+}
+
+#flower-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  background-color: #FAEEFF;
+}
+
+
+body {
+      /* /* margin: 0;  */
+      overflow: hidden;
+      /* background-color: #F9E9FF; */
+      background-color : #FAEEFF 
+  }
+
+
+/* Header.css */
+.header {
+  display: flex; /* Use flexbox to align items horizontally */
+  justify-content: center; /* Distribute items evenly along the main axis */
+  align-items: center; /* Align items vertically */
+  padding: 5px;
+  position: relative;
+  background-color: white;
+}
+
+.header-content {
+  display: flex;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin-right: 20px;
+  font-weight: bold;
+  color: #520671;
+}
+
+/* Add more styles as needed */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  /* margin: 0 auto; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-picture {
+  margin-left: auto; /* This will push the picture to the right side of the header */
+}
+.profile-picture img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  /* Add any additional styling you want for the profile picture here */
+}
