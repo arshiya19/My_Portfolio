@@ -7,7 +7,9 @@ import Photo from './mylogo.png';
 import Header from "./header.js";
 import Body from "./body.js";
 import Footer from "./footer.js"
-import Profilephoto from "./myprofile-pic.jpg"
+import Aboutme from "./pages/Aboutme.js";
+import Projects from "./pages/projects.js"
+import { BrowserRouter as Router, Route,Routes, Switch } from 'react-router-dom';
 
 function App() {
   const renderRandomFlowers = () => {
@@ -16,11 +18,18 @@ function App() {
     return null;
   };
   return (
-    <div>
-      <Header />
-      <Body renderRandomFlowers={renderRandomFlowers} />
-      <Footer />
-    </div>
+    <Router>
+      <div>
+        <Header />
+        <Body renderRandomFlowers={renderRandomFlowers} />
+        <Routes>
+          <Route exact path="/Aboutme" component={Aboutme} />
+          <Route exact path="/project" component={Projects} />
+          {/* Add more routes as needed */}
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 export default App;

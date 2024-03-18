@@ -67,7 +67,7 @@ function Body({ renderRandomFlowers }: { renderRandomFlowers: any }): React.JSX.
         return flowers;
     };
 
-    const rectHeight = 500; // Height of the rectangle
+    const rectHeight = 550; // Height of the rectangle
     const svgHeight = window.innerHeight; // Height of the SVG
 
     // Calculate the y position to center the rectangle vertically
