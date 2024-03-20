@@ -30,7 +30,7 @@ body {
       /* /* margin: 0;  */
       overflow: hidden;
       /* background-color: #F9E9FF; */
-      background-color : #FAEEFF 
+      background-color : #E6FFFC 
   }
 
 
@@ -41,7 +41,7 @@ body {
   align-items: center; /* Align items vertically */
   padding: 10px;
   position: relative;
-  background-color: #FAEEFF ;
+  background-color: #FBFFFE ;
   font-size: 18px;
 }
 
@@ -112,4 +112,17 @@ body {
   font-family: "Cinzel Decorative", serif;
   font-weight: 900;
   font-style: normal;
+}
+
+
+.gantari {
+  font-family: "Gantari", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 90 ;
+  font-style: normal;
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* Ensure content is above the particles background */
 }
