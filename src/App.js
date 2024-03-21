@@ -67,6 +67,7 @@
 //   );
 // }
 // export default App;
+
 import React from "react";
 import './App.css';
 import Header from "./header.js";
@@ -82,18 +83,11 @@ function App() {
   return (
     <Router>
       <div>
-        {/* Render the ParticlesComponent as the background */}
         <ParticlesComponent id="particles" />
 
-        {/* Render the rest of the content */}
         <div className="content">
           <Header />
-          <Routes>
-            <Route exact path="/Aboutme" component={Aboutme} />
-            <Route exact path="/project" component={Projects} />
-            {/* Add more routes as needed */}
-          </Routes>
-          <Body /> {/* Render the Body component */}
+          <Body /> 
           <Footer />
         </div>
       </div>
@@ -102,4 +96,3 @@ function App() {
 }
 
 export default App;
-

@@ -1,36 +1,9 @@
-.flower {
-  position: absolute;
-  width: 10px; /* Adjust the width and height based on your flower size */
-  height: 10px;
-  fill: #fff; /* Adjust the fill color based on your flower color */
-} 
-
-#flower-C {
-  transform: translateX(-90%);
-}
-
-#flower-container {
-  display: flex;
-  justify-content: space-between;
-  width: 100vw;
-  height: 100vh;
-  background-color: #FAEEFF;
-}
-
-#flower-header {
-  display: flex;
-  justify-content: space-between;
-  width: 100vw;
-  height: 100vh;
-  background-color: #FAEEFF;
-}
-
-
 body {
-      /* /* margin: 0;  */
+      margin: 0; 
       overflow: hidden;
       /* background-color: #F9E9FF; */
-      background-color : #E6FFFC 
+      background-color : #E6FFFC ;
+      /* padding-top : 5em; */
   }
 
 
@@ -39,10 +12,38 @@ body {
   display: flex; /* Use flexbox to align items horizontally */
   justify-content: center; /* Distribute items evenly along the main axis */
   align-items: center; /* Align items vertically */
-  padding: 10px;
-  position: relative;
-  background-color: #FBFFFE ;
+  /* padding: 20px; */
+  position: sticky;
+  background-color: #FAF5F5 ;
   font-size: 18px;
+  height : 3em;
+  width : 100%;
+}
+
+.header-bar{
+  text-decoration: none;
+  display : inline;
+  padding : 20px 20px;
+  font-weight : 700;
+  font-size:large;
+  cursor: pointer;
+
+}
+
+.aboout {
+  margin: 0; 
+  overflow: hidden;
+  /* background-color: #F9E9FF; */
+  background-color : #E6FFFC ;
+  /* padding-top : 5em; */
+}
+
+.projectss {
+  margin: 0; 
+  overflow: hidden;
+  /* background-color: #F9E9FF; */
+  background-color : #E6FFFC ;
+  /* padding-top : 5em; */
 }
 
 .header-content {
@@ -54,19 +55,6 @@ body {
   flex-direction: column;
 }
 
-.nav-list {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-item {
-  margin-right: 20px;
-  font-weight: bold;
-  color: #520671;
-  font : cinzel-decorative-regular
-}
 
 /* Add more styles as needed */
 
@@ -94,26 +82,6 @@ body {
   border-radius: 50%;
   /* Add any additional styling you want for the profile picture here */
 }
-
-/* styles.css */
-.cinzel-decorative-regular {
-  font-family: "Cinzel Decorative", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.cinzel-decorative-bold {
-  font-family: "Cinzel Decorative", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.cinzel-decorative-black {
-  font-family: "Cinzel Decorative", serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
 
 .gantari {
   font-family: "Gantari", sans-serif;
