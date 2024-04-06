@@ -68,6 +68,35 @@
 // }
 // export default App;
 
+// import React from "react";
+// import './App.css';
+// import Header from "./header.js";
+// import Footer from "./footer.js";
+// import Aboutme from "./pages/Aboutme.js";
+// import Projects from "./pages/projects.js";
+// import ParticlesComponent from "./components/particles.js";
+// import Body from "./body.js";
+
+// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+// function App() {
+//   return (
+//     <Router>
+//       <div>
+//         <ParticlesComponent id="particles" />
+
+//         <div className="content">
+//           <Header />
+//           <Body /> 
+//           <Footer />
+//         </div>
+//       </div>
+//     </Router>
+//   );
+// }
+
+// export default App;
+
 import React from "react";
 import './App.css';
 import Header from "./header.js";
@@ -84,10 +113,13 @@ function App() {
     <Router>
       <div>
         <ParticlesComponent id="particles" />
-
         <div className="content">
           <Header />
-          <Body /> 
+          <Routes>
+            <Route path="/" element={<Body />} />
+            <Route path="/About" element={<Aboutme />} />
+            <Route path="Projects" element={<Projects />} />
+          </Routes>
           <Footer />
         </div>
       </div>
@@ -96,3 +128,31 @@ function App() {
 }
 
 export default App;
+
+// import React from "react";
+// import './App.css';
+// import Header from "./header.js";
+// import Footer from "./footer.js";
+// import Aboutme from "./pages/Aboutme.js";
+// import Projects from "./pages/projects.js";
+// import ParticlesComponent from "./components/particles.js";
+// import Body from "./body.js";
+
+// function App() {
+//   return (
+//     <div>
+//       <Header />
+//       <Body />
+//       <Aboutme />
+//       <Projects />
+//       <Footer />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+
+

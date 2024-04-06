@@ -4,6 +4,7 @@ body {
       /* background-color: #F9E9FF; */
       background-color : #E6FFFC ;
       /* padding-top : 5em; */
+      overflow-x: hidden;
   }
 
 
@@ -93,4 +94,57 @@ body {
 .content {
   position: relative;
   z-index: 1; /* Ensure content is above the particles background */
+}
+
+.gear {
+  animation: spin infinite 1s linear;
+  font-size: 15px;
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Inherits the color from its parent */
+}
+
+/* Add more styles as needed */
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.circle{
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: linear-gradient(115deg,yellow);
+  animation: rotate 1s linear infinite;
+}
+
+.circle1{
+  width: 240px;
+  height: 240px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
 }

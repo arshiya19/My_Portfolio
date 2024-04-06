@@ -23,7 +23,7 @@ const ParticlesComponent = (props) => {
         value: "#FFFFFF", // White background
       },
     },
-    fpsLimit: 120,
+    fpsLimit: 50,
     interactivity: {
       events: {
         onClick: {
@@ -63,7 +63,7 @@ const ParticlesComponent = (props) => {
           default: "bounce",
         },
         random: true,
-        speed: 1,
+        speed: 1.5,
         straight: false,
       },
       number: {

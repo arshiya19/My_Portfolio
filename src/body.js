@@ -3,29 +3,37 @@ import Profilephoto from "./myprofile-pic.jpg";
 import GitHubIcon from "./github.png";
 import EmailIcon from "./email.png";
 import LinkedinIcon from "./linkedin.png";
-import { Typed } from "react-typed";
-import { Link } from "react-router-dom";
 
 
-const textArray = ['a CS Grad!','a Technophile','into Machine Learning','into Frontend Development', 'into backend development', 'into Mobile App Development'];
-    const rectHeight = 550; // Height of the rectangle
+const textArray = ['a CS Grad!', 'a Technophile', 'into Machine Learning', 'into Frontend Development', 'into backend development', 'into Mobile App Development'];
 
 function Body() {
-    
+
+    // const [svgDimensions, setSvgDimensions] = useState({ width: window.innerWidth, height: window.innerHeight });
+
+    // useEffect(() => {
+    //     const handleResize = () => {
+    //         setSvgDimensions({ width: window.innerWidth, height: window.innerHeight });
+    //     };
+
+    //     window.addEventListener('resize', handleResize);
+
+    //     return () => {
+    //         window.removeEventListener('resize', handleResize);
+    //     };
+    // }, []);
+    const rectHeight = 550; // Height of the rectangle
     const svgHeight = window.innerHeight; // Height of the SVG
-
-    // Calculate the y position to center the rectangle vertically
     const rectY = (svgHeight - rectHeight) / 2;
-    const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
+
+    const [currentWordIndex, setCurrentWordIndex] = useState(0);
     useEffect(() => {
         const intervalId = setInterval(() => {
             setCurrentWordIndex(prevIndex => (prevIndex + 1) % textArray.length);
-        }, 2000);
-
+        }, 1000);
         return () => clearInterval(intervalId);
     }, []);
-    
 
 
     return (
@@ -36,7 +44,30 @@ function Body() {
                     <image xlinkHref={Profilephoto} width="1" height="1" preserveAspectRatio="xMidYMid slice" />
                 </pattern>
             </defs>
+            {/* <FontAwesomeIcon className='gear logo-text' icon={faGear} style={{ color: '#C8102E', width: '50px', height: '50px' }} /> */}
             {/* <rect x={100} y={rectY} width={800} height={500} rx={20} ry={20} fill="#FBFFFE" fillOpacity="0.5" stroke="purple" strokeWidth="0.1" /> */}
+            <circle
+                cx={window.innerWidth - 800} cy={window.innerHeight / 2 - 313} r={10} strokeWidth="5" fill="white"
+                style={{ animation: "spin 1s linear infinite" }}
+            >
+                <animate attributeName="stroke" values="red;blue;yellow;pink" dur="1.5s" repeatCount="indefinite" />
+            </circle>
+
+            {/* <style>
+                {`
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        `}
+            </style> */}
+            <text x={655} y={100} fontSize="15" className=".gantari " fill="#283D7B" fontWeight="bold">
+                Development in Progress
+            </text>
             <text x={200} y={rectY + 65} fontSize="50" className=".gantari" fill="#283D7B" fontWeight="bold">
                 Hey,
             </text>
@@ -47,12 +78,12 @@ function Body() {
                 Arshiya Naheed.
             </text>
             <text x={200} y={rectY + 185} fontSize="30" fill="#283D7B" fontWeight="bold">
-            I Am 
+                I Am
             </text>
             <text x={270} y={rectY + 185} fontSize="30" fill="#AA37AF" fontWeight="bold">
-             {textArray[currentWordIndex]}
+                {textArray[currentWordIndex]}
             </text>
-            <a href="https://drive.google.com/file/d/1Pu8tUYPxhBfjA7gz3VyMky7ajKHxQn5x/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1gICGydOLXjTSRpzP8MDhpIIFN6Tuy6r0/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
                 <rect x={200} y={rectY + 250} width={135} height={50} fill="#7D03AB" rx={10} ry={10} />
                 <text x={215} y={rectY + 280} fontSize="20" fill="white" className=".gantari" fontWeight="bold">
                     My Resume
